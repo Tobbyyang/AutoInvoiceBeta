@@ -32,28 +32,28 @@ public class InvoiceToDBServlet extends HttpServlet {
      public void doPost(HttpServletRequest request, HttpServletResponse response)
  			throws ServletException, IOException {
 
- 		response.setCharacterEncoding("UTF-8"); //设置输出编码
+ 		response.setCharacterEncoding("UTF-8"); 
  		request.setCharacterEncoding("UTF-8");
  		
- 		String gfmc = request.getParameter("gfmc"); //获取出发地
+ 		String gfmc = request.getParameter("gfmc"); 
  		
- 		String [] spmc = request.getParameterValues("spmc"); //获取兴趣
+ 		String [] spmc = request.getParameterValues("spmc"); 
 
  		
- 		response.setContentType("text/html");  //设置输出类型
- 		PrintWriter out = response.getWriter(); //获取out对象
+ 		response.setContentType("text/html");  
+ 		PrintWriter out = response.getWriter(); 
  		
  		out.println("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">");
  		out.println("<HTML>");
  		out.println("  <HEAD><TITLE>A Servlet</TITLE></HEAD>");
  		out.println("  <BODY>");
- 		out.println("<H2>出发地："+ gfmc +"</H2>");
+ 		out.println("<H2>购方名称"+ gfmc +"</H2>");
 
  
- 		for(String str:spmc) {
- 			
- 			out.println(str+" ");
- 		}
+// 		for(String str:spmc) {
+// 			
+// 			out.println(str+" ");
+// 		}
 
  		out.println("  </BODY>");
  		out.println("</HTML>");
