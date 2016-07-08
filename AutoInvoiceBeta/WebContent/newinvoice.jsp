@@ -10,7 +10,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>新建发票</title>
 </head>
 <body>
 <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
@@ -1218,7 +1218,7 @@ li[data-type="control_image"] img {
         <div id="cid_2" class="form-input-wide">
           <div style="margin-left:156px" class="form-buttons-wrapper">
             <button id="input_2" type="submit" class="form-submit-button">
-              确定
+              保存并继续
             </button>
           </div>
         </div>
